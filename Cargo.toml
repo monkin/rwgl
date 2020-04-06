@@ -1,0 +1,24 @@
+[package]
+name = "rwgl"
+version = "0.1.0"
+authors = ["Andrei Monkin"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.60"
+js-sys = "0.3.37"
+
+[dependencies.web-sys]
+version = "0.3.37"
+features = [
+  "Document",
+  "Element",
+  "HtmlElement",
+  "HtmlCanvasElement",
+  "Node",
+  "Window",
+  "WebGlRenderingContext",
+]
